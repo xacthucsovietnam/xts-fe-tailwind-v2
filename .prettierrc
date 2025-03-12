@@ -1,0 +1,8 @@
+{
+  "semi": true, // Sử dụng dấu chấm phẩy
+  "singleQuote": true, // Sử dụng dấu nháy đơn
+  "trailingComma": "all", // Thêm dấu phẩy ở cuối các phần tử
+  "tabWidth": 2, // Số khoảng cách cho mỗi tab
+  "printWidth": 80, // Độ dài tối đa mỗi dòng
+  "endOfLine": "lf" // Ký tự xuống dòng (lf cho Linux/Mac, crlf cho Windows)
+}
