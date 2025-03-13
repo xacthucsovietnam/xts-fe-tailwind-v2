@@ -1,69 +1,123 @@
 // src/i18n/vi.ts
 const vi = {
-    translation: {
-      button: {
-        save: 'Lưu',
-        cancel: 'Hủy',
-        submit: 'Gửi',
-      },
-      input: {
-        error: {
-          required: 'Trường này là bắt buộc',
-        },
-      },
-      modal: {
-        close: 'Đóng',
-      },
-      card: {
-        title: 'Tiêu đề Thẻ',
-      },
-      loading: {
-        message: 'Đang tải...',
-      },
-      dropdown: {
-        placeholder: 'Tìm kiếm hoặc chọn...',
-        noOptions: 'Không tìm thấy tùy chọn',
-      },
-      table: {
-        noData: 'Không có dữ liệu',
-      },
-      layout: {
-        companyName: 'Công ty XTS',
-        overview: 'Tổng quan',
-        traceability: 'Truy xuất',
-        administration: 'Quản trị',
-        products: 'Sản phẩm',
-        labelTemplates: 'Mẫu tem',
-        printLabels: 'In tem',
-        activate: 'Kích hoạt',
-        sell: 'Bán',
-        cancel: 'Hủy',
-        lookup: 'Tra cứu',
-        entities: 'Chủ thể',
-        inviteUsers: 'Mời người dùng',
-        employees: 'Nhân viên',
-        userProfile: 'Hồ sơ người dùng',
-      },
-      login: {
-        title: 'Đăng nhập',
-        email: 'Email',
-        password: 'Mật khẩu',
-        forgotPassword: 'Quên mật khẩu?',
-        loginButton: 'Đăng nhập',
-      },
-      signup: {
-        title: 'Đăng ký',
-        email: 'Email',
-        password: 'Mật khẩu',
-        confirmPassword: 'Xác nhận mật khẩu',
-        signupButton: 'Đăng ký',
-      },
-      dashboard: {
-        title: 'Bảng điều khiển',
-        welcome: 'Chào mừng, {{name}}!',
-        recentActivity: 'Hoạt động gần đây',
+  translation: {
+    button: {
+      save: 'Lưu',
+      cancel: 'Hủy',
+      submit: 'Xác nhận',
+      logout: 'Đăng xuất',
+      loginbutton: 'Đăng nhập',
+      loginwithzalo: 'Đăng nhập bằng Zalo', 
+      signupbutton: 'Đăng ký', 
+      back: 'Quay lại', 
+    },
+    input: {
+      error: {
+        required: 'Trường này là bắt buộc',
       },
     },
-  };
-  
-  export default vi;
+    modal: {
+      close: 'Đóng',
+    },
+    card: {
+      title: 'Tiêu đề Thẻ',
+    },
+    loading: {
+      message: 'Đang tải...',
+    },
+    dropdown: {
+      placeholder: 'Tìm kiếm hoặc chọn...',
+      noOptions: 'Không tìm thấy tùy chọn',
+    },
+    table: {
+      noData: 'Không có dữ liệu',
+    },
+    layout: {
+      companyName: 'Công ty XTS',
+      overview: 'Tổng quan',
+      traceability: 'Truy xuất',
+      administration: 'Quản trị',
+      products: 'Sản phẩm',
+      labelTemplates: 'Mẫu tem',
+      printLabels: 'In tem',
+      activate: 'Kích hoạt',
+      sell: 'Bán',
+      cancel: 'Hủy',
+      lookup: 'Tra cứu',
+      entities: 'Chủ thể',
+      inviteUsers: 'Mời người dùng',
+      employees: 'Nhân viên',
+      userProfile: 'Hồ sơ người dùng',
+      userMenu: {
+        profile: 'Hồ sơ người dùng',
+        switchEntity: 'Đổi chủ thể',
+        ownedEntities: 'Danh sách chủ thể sở hữu',
+        linkedEntities: 'Danh sách chủ thể liên kết',
+        invitations: 'Danh sách lời mời liên kết',
+        changePassword: 'Đổi mật khẩu',
+        logout: 'Đăng xuất',
+      },
+    },
+    login: {
+      title: 'Đăng nhập', // Cập nhật title
+      phone: 'Số điện thoại', // Đổi từ email thành phone
+      password: 'Mật khẩu',
+      forgotPassword: 'Quên mật khẩu?',
+      loginButton: 'Đăng nhập',
+      loginWithZalo: 'Đăng nhập bằng Zalo',
+      rememberMe: 'Ghi nhớ đăng nhập',
+      noAccount: 'Bạn chưa có tài khoản? ',
+      signupLink: 'Đăng ký ngay',
+    },
+    signup: {
+      title: 'Đăng ký',
+      phone: 'Số điện thoại',
+      password: 'Mật khẩu',
+      confirmPassword: 'Xác nhận mật khẩu',
+      signupButton: 'Đăng ký',
+    },
+    dashboard: {
+      title: 'Bảng điều khiển',
+      welcome: 'Chào mừng, {{name}}!',
+      userInfo: 'Thông tin người dùng',
+      ownedEntities: 'Danh sách chủ thể sở hữu',
+      linkedEntities: 'Danh sách chủ thể đã liên kết',
+      invitations: 'Danh sách lời mời liên kết',
+      userAvatar: 'Ảnh đại diện',
+      username: 'Tên người dùng',
+      phone: 'Số điện thoại',
+      address: 'Địa chỉ',
+      logo: 'Logo',
+      entityName: 'Tên chủ thể',
+    },
+    forgotPassword: {
+      title: 'Quên mật khẩu',
+      phone: 'Số điện thoại',
+      submitButton: 'Gửi yêu cầu',
+      backToLogin: 'Quay lại đăng nhập',
+    },
+    productList: {
+      title: 'Danh sách sản phẩm',
+      search: 'Tìm kiếm',
+      searchPlaceholder: 'Tìm kiếm theo tên hoặc mã sản phẩm...',
+      category: 'Danh mục',
+      status: 'Trạng thái',
+      name: 'Tên sản phẩm',
+      code: 'Mã sản phẩm',
+      price: 'Giá',
+      actions: 'Hành động',
+      view: 'Xem',
+      edit: 'Chỉnh sửa',
+      delete: 'Xóa',
+      resetFilters: 'Xóa bộ lọc',
+      addProduct: 'Thêm sản phẩm',
+      filters: 'Bộ lọc',
+      applyFilters: 'Áp dụng bộ lọc',
+      previous: 'Trước',
+      next: 'Sau',
+      page: 'Trang',
+    },
+  },
+};
+
+export default vi;

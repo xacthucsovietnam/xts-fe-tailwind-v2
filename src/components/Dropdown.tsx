@@ -57,23 +57,31 @@ const Dropdown: React.FC<DropdownProps> = ({ options, selected, onSelect }) => {
   const maxHeight = Math.min(filteredOptions.length, 10) * 40;
   const showScroll = filteredOptions.length > 10;
 
+  // Hàm xử lý mở/đóng dropdown khi click vào toàn bộ thẻ
+  const handleToggleDropdown = () => {
+    if (!isOpen && !isSearchable) {
+      setIsOpen(true);
+    } else if (!isSearchable) {
+      setIsOpen(false);
+    } else {
+      setIsOpen(!isOpen);
+    }
+  };
+
   return (
     <div className="relative w-full" ref={dropdownRef}>
-      <div className="relative">
+      {/* Bọc input và icon trong div để xử lý click chung */}
+      <div
+        className="relative flex items-center border rounded w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+        onClick={handleToggleDropdown}
+      >
         <input
           type="text"
-          value={isSearchable ? searchTerm : selectedLabel} // Hiển thị giá trị đã chọn khi không searchable
+          value={isSearchable ? searchTerm : selectedLabel}
           onChange={(e) => {
             if (isSearchable) {
               setSearchTerm(e.target.value);
               setIsOpen(true);
-            }
-          }}
-          onClick={() => {
-            if (!isSearchable) {
-              setIsOpen(!isOpen); // Khi không searchable, click để mở/đóng
-            } else {
-              setIsOpen(true); // Khi searchable, click để mở
             }
           }}
           onFocus={() => {
@@ -82,13 +90,13 @@ const Dropdown: React.FC<DropdownProps> = ({ options, selected, onSelect }) => {
             }
           }}
           placeholder={t('dropdown.placeholder')}
-          readOnly={!isSearchable} // Khi không searchable, input chỉ đọc
-          className={`w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+          readOnly={!isSearchable}
+          className={`flex-1 p-2 border-none rounded focus:outline-none ${
             isSearchable ? 'cursor-text' : 'cursor-pointer'
           }`}
         />
         {/* Icon Down/Up */}
-        <div className="absolute right-2 top-1/2 transform -translate-y-1/2">
+        <div className="absolute right-2 top-1/2 transform -translate-y-1/2 cursor-pointer">
           {isOpen ? (
             <ChevronUpIcon className="w-5 h-5 text-black-500" />
           ) : (

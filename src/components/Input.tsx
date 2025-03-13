@@ -3,6 +3,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 interface InputProps {
+  label?: string;
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;

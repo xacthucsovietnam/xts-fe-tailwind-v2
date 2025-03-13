@@ -1,69 +1,123 @@
 // src/i18n/en.ts
 const en = {
-    translation: {
-      button: {
-        save: 'Save',
-        cancel: 'Cancel',
-        submit: 'Submit',
-      },
-      input: {
-        error: {
-          required: 'This field is required',
-        },
-      },
-      modal: {
-        close: 'Close',
-      },
-      card: {
-        title: 'Card Title',
-      },
-      loading: {
-        message: 'Loading...',
-      },
-      dropdown: {
-        placeholder: 'Search or select...',
-        noOptions: 'No options found',
-      },
-      table: {
-        noData: 'No data available',
-      },
-      layout: {
-        companyName: 'XTS Company',
-        overview: 'Overview',
-        traceability: 'Traceability',
-        administration: 'Administration',
-        products: 'Products',
-        labelTemplates: 'Label Templates',
-        printLabels: 'Print Labels',
-        activate: 'Activate',
-        sell: 'Sell',
-        cancel: 'Cancel',
-        lookup: 'Lookup',
-        entities: 'Entities',
-        inviteUsers: 'Invite Users',
-        employees: 'Employees',
-        userProfile: 'User Profile',
-      },
-      login: {
-        title: 'Login',
-        email: 'Email',
-        password: 'Password',
-        forgotPassword: 'Forgot Password?',
-        loginButton: 'Login',
-      },
-      signup: {
-        title: 'Sign Up',
-        email: 'Email',
-        password: 'Password',
-        confirmPassword: 'Confirm Password',
-        signupButton: 'Sign Up',
-      },
-      dashboard: {
-        title: 'Dashboard',
-        welcome: 'Welcome, {{name}}!',
-        recentActivity: 'Recent Activity',
+  translation: {
+    button: {
+      save: 'Save',
+      cancel: 'Cancel',
+      submit: 'Submit',
+      logout: 'Logout',
+      loginbutton: 'Login', 
+      loginwithzalo: 'Login with Zalo', 
+      signupbutton: 'Sign Up',
+      back: 'Back',
+    },
+    input: {
+      error: {
+        required: 'This field is required',
       },
     },
-  };
-  
-  export default en;
+    modal: {
+      close: 'Close',
+    },
+    card: {
+      title: 'Card Title',
+    },
+    loading: {
+      message: 'Loading...',
+    },
+    dropdown: {
+      placeholder: 'Search or select...',
+      noOptions: 'No options found',
+    },
+    table: {
+      noData: 'No data available',
+    },
+    layout: {
+      companyName: 'XTS Company',
+      overview: 'Overview',
+      traceability: 'Traceability',
+      administration: 'Administration',
+      products: 'Products',
+      labelTemplates: 'Label Templates',
+      printLabels: 'Print Labels',
+      activate: 'Activate',
+      sell: 'Sell',
+      cancel: 'Cancel',
+      lookup: 'Lookup',
+      entities: 'Entities',
+      inviteUsers: 'Invite Users',
+      employees: 'Employees',
+      userProfile: 'User Profile',
+      userMenu: {
+        profile: 'User Profile',
+        switchEntity: 'Switch Entity',
+        ownedEntities: 'List of Owned Entities',
+        linkedEntities: 'List of Linked Entities',
+        invitations: 'List of Link Invitations',
+        changePassword: 'Change Password',
+        logout: 'Logout',
+      },
+    },
+    login: {
+      title: 'Login',
+      phone: 'Phone Number', // Đổi từ email thành phone
+      password: 'Password',
+      forgotPassword: 'Forgot Password?',
+      loginButton: 'Login',
+      loginWithZalo: 'Login with Zalo',
+      rememberMe: 'Remember me',
+      noAccount: 'Don’t have an account? ',
+      signupLink: 'Sign up now',
+    },
+    signup: {
+      title: 'Sign Up',
+      phone: 'Phone Number',
+      password: 'Password',
+      confirmPassword: 'Confirm Password',
+      signupButton: 'Sign Up',
+    },
+    dashboard: {
+      title: 'Dashboard',
+      welcome: 'Welcome, {{name}}!',
+      userInfo: 'User Information',
+      ownedEntities: 'List of Owned Entities',
+      linkedEntities: 'List of Linked Entities',
+      invitations: 'List of Link Invitations',
+      userAvatar: 'Avatar',
+      username: 'Username',
+      phone: 'Phone Number',
+      address: 'Address',
+      logo: 'Logo',
+      entityName: 'Entity Name',
+    },
+    forgotPassword: {
+      title: 'Forgot Password',
+      phone: 'Phone Number',
+      submitButton: 'Submit Request',
+      backToLogin: 'Back to Login',
+    },
+    productList: {
+      title: 'Product List',
+      search: 'Search',
+      searchPlaceholder: 'Search by name or code...',
+      category: 'Category',
+      status: 'Status',
+      name: 'Product Name',
+      code: 'Product Code',
+      price: 'Price',
+      actions: 'Actions',
+      view: 'View',
+      edit: 'Edit',
+      delete: 'Delete',
+      resetFilters: 'Reset Filters',
+      addProduct: 'Add Product',
+      filters: 'Filters',
+      applyFilters: 'Apply Filters',
+      previous: 'Previous',
+      next: 'Next',
+      page: 'Page',
+    },
+  },
+};
+
+export default en;

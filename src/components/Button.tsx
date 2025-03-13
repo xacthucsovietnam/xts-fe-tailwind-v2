@@ -6,10 +6,13 @@ interface ButtonProps {
   text: string;
   onClick: () => void;
   variant?: 'primary' | 'secondary' | 'danger';
+  size?: 'small' | 'medium' | 'large';
   disabled?: boolean;
+  className?: string;
+  fullWidth?: boolean;
 }
 
-const Button: React.FC<ButtonProps> = ({ text, onClick, variant = 'primary', disabled = false }) => {
+const Button: React.FC<ButtonProps> = ({ text, onClick, variant = 'primary', disabled = false, className }) => {
   const { t } = useTranslation();
 
   const variantStyles = {
@@ -26,9 +29,9 @@ const Button: React.FC<ButtonProps> = ({ text, onClick, variant = 'primary', dis
     <button
       onClick={onClick}
       disabled={disabled}
-      className={`${baseStyles} ${variantStyles[variant]} ${disabledStyles}`}
+      className={`${baseStyles} ${variantStyles[variant]} ${disabledStyles} ${className || ''}`}
     >
-      {t(`button.${text.toLowerCase()}`, text)}
+      {t(`button.${text.toLowerCase()}`)}
     </button>
   );
 };

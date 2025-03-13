@@ -8,7 +8,7 @@ interface Column {
 }
 
 interface Row {
-  [key: string]: string | number;
+  [key: string]: any;
 }
 
 interface TableProps {
